@@ -1,4 +1,7 @@
+
+import java.io.File
 class GestionCine {
+
     private val cine: Cine
 
     init {
@@ -6,7 +9,7 @@ class GestionCine {
         cine.leerVentas()
         mostrarMenu()
     }
-
+    // Función para mostrar el menú del cine
     private fun mostrarMenu() {
         var opcion: Int
         do {
