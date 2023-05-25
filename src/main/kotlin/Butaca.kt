@@ -1,3 +1,4 @@
+import java.io.File
 class Butaca(fila: Int, asiento: Int) {
     val fila = fila
     val asiento = asiento

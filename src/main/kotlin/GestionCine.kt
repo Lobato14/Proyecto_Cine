@@ -41,7 +41,7 @@ class GestionCine {
         val asiento = readLine()?.toIntOrNull()
 
         if (fila != null && asiento != null) {
-            cine.venderEntrada(fila, asiento)
+            cine.comprarEntrada(fila, asiento)
         } else {
             println("Valores de fila o asiento inválidos.")
         }
