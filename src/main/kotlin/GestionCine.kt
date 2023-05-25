@@ -1,5 +1,4 @@
 
-import java.io.File
 class GestionCine {
 
     private val cine: Cine
@@ -13,12 +12,13 @@ class GestionCine {
     private fun mostrarMenu() {
         var opcion: Int
         do {
+            println("----Cine Club Lumiere------")
             println("1. Mostrar butacas")
             println("2. Comprar entrada")
             println("3. Devolver una entrada")
             println("4. Salir")
             println("-------------------------")
-
+            print("Elija una opción: ")
             opcion = readLine()?.toIntOrNull() ?: 0
 
             when (opcion) {
@@ -35,9 +35,9 @@ class GestionCine {
     }
 
     private fun comprarEntrada() {
-        println("Introduce el número de fila:")
+        print("Introduce el número de fila: ")
         val fila = readLine()?.toIntOrNull()
-        println("Introduce el número de asiento:")
+        print("Introduce el número de asiento: ")
         val asiento = readLine()?.toIntOrNull()
 
         if (fila != null && asiento != null) {
