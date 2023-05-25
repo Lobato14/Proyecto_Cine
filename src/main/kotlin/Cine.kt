@@ -92,5 +92,15 @@ class Cine {
         }
         file.writeText(ventas.joinToString("\n"))
     }
+    // Función para vaciar todas las filas y asientos del cine
+    fun vaciarCine() {
+        for (i in 0 until nFilas) {
+            for (j in 0 until nAsientos) {
+                cine[i][j] = false
+            }
+        }
+        println("Se han vaciado todas las filas y asientos del cine.")
+    }
+
 }
 

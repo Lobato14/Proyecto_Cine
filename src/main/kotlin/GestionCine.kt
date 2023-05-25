@@ -16,7 +16,8 @@ class GestionCine {
             println("1. Mostrar butacas")
             println("2. Comprar entrada")
             println("3. Devolver una entrada")
-            println("4. Salir")
+            println("4. Vaciar el cine")
+            println("5. Salir")
             println("-------------------------")
             print("Elija una opción: ")
             opcion = readLine()?.toIntOrNull() ?: 0
@@ -25,7 +26,8 @@ class GestionCine {
                 1 -> cine.mostrarCine()
                 2 -> comprarEntrada()
                 3 -> devolverEntrada()
-                4 -> {
+                4 -> cine.vaciarCine()
+                5-> {
                     cine.guardarVentas()
                     println("Saliendo de la aplicación...")
                 }
