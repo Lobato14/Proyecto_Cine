@@ -33,7 +33,7 @@ class GestionCine {
                 }
                 else -> println("Opción inválida. Por favor, selecciona una opción válida.")
             }
-        } while (opcion != 4)
+        } while (opcion != 5)
     }
 
     private fun comprarEntrada() {
